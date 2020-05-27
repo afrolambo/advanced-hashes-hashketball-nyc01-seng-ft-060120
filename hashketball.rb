@@ -201,14 +201,13 @@ def big_shoe_rebounds
   rebound = 0 
   game_hash.each do |team, team_info| 
     team_info[:players].each do |info|
-      until big_shoe > info[:shoe] do 
+      while big_shoe < info[:shoe] do
         big_shoe = info[:shoe] 
-      p info
-    rebound = info[:rebounds]
-      return rebound
+        rebound = info[:rebounds]
       end
     end 
   end 
+  return rebound
 end   
 
   
