@@ -204,8 +204,9 @@ def big_shoe_rebounds
       until big_shoe > info[:shoe] do 
         big_shoe = info[:shoe] 
         X = info 
-        rebound = info[:rebounds]
-        return rebound
+      return info 
+    rebound = info[:rebounds]
+      return rebound
       end
     end 
   end 
