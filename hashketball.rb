@@ -203,7 +203,8 @@ def big_shoe_rebounds
     team_info[:players].each do |info|
       if big_shoe < info[:shoe] do 
         binding.pry
-        big_shoe = info[:shoe] && rebound = info[:rebounds]
+        big_shoe = info[:shoe] 
+        rebound = info[:rebounds]
         return rebound
       end
     end 
