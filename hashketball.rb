@@ -204,8 +204,9 @@ def big_shoe_rebounds
       if big_shoe < info[:shoe] do 
         big_shoe = info[:shoe] && rebound = info[:rebounds]
         return rebound
-      end 
+      end
     end 
+  end 
   end 
 end   
 
