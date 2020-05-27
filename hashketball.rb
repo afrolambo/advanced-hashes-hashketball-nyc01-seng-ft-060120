@@ -203,7 +203,7 @@ def big_shoe_rebounds
     team_info[:players].each do |info|
       until big_shoe > info[:shoe] do 
         big_shoe = info[:shoe] 
-      return info
+      p info
     rebound = info[:rebounds]
       return rebound
       end
